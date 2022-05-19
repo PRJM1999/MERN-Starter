@@ -1,0 +1,100 @@
+[
+    {
+        "value": 1,
+        "name": "Avimore",
+        "label": "Avimore",
+        "longitude": -3.8301,
+        "lattidue": 57.1974
+    },
+    {
+        "value": 2,
+        "name": "Loch Lomond",
+        "label": "Loch Lomond",
+        "longitude": -4.6229,
+        "lattidue": 56.1083
+    },
+    {
+        "value": 3,
+        "name": "Ben Nevis",
+        "label": "Ben Nevis",
+        "longitude": -5.0046,
+        "lattidue": 56.7982
+    },
+    {
+        "value": 4,
+        "name": "Glencoe Trail",
+        "label": "Glencoe Trail",
+        "longitude": -5.0945,
+        "lattidue": 56.6806
+    },
+    {
+        "value": 4,
+        "name": "West Highland Way",
+        "label": "West Highland Way",
+        "longitude": -4.6382,
+        "lattidue": 56.3860
+    },
+    {
+        "value": 5,
+        "name": "The Cobbler",
+        "label": "The Cobbler",
+        "longitude": -4.8089,
+        "lattidue": 56.2132
+    },
+    {
+        "value": 6,
+        "name": "Southern Upland Way",
+        "label": "Southern Upland Way",
+        "longitude": -3.1958,
+        "lattidue": 55.4857
+    },
+    {
+        "value": 7,
+        "name": "Isle of Skye",
+        "label": "Isle of Skye",
+        "longitude": -6.2313,
+        "lattidue": 57.2745
+    },
+    {
+        "value": 8,
+        "name": "Stac Pollaidh",
+        "label": "Stac Pollaidh",
+        "longitude": -5.2065,
+        "lattidue": 58.0430
+    },
+    {
+        "value": 9,
+        "name": "Liathach",
+        "label": "Liathach",
+        "longitude": -5.4917,
+        "lattidue": 57.5854
+    },
+    {
+        "value": 10,
+        "name": "An Teallach",
+        "label": "An Teallach",
+        "longitude": -5.2693,
+        "lattidue": 57.8007
+    },
+    {
+        "value": 11,
+        "name": "Cape Wrath",
+        "label": "Cape Wrath",
+        "longitude": -4.9990,
+        "lattidue": 58.6242
+    },
+    {
+        "value": 12,
+        "name": "Falls of Bruar",
+        "label": "Falls of Bruar",
+        "longitude": -3.9367,
+        "lattidue": 56.7738
+    },
+    {
+        "value": 13,
+        "name": "Morrone",
+        "label": "Morrone",
+        "longitude": -3.4327,
+        "lattidue": 56.9802
+    }
+]
