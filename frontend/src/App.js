@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Footer from './components/Footer'
+import Terms from './pages/Terms'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Route path='/' element={<Dashboard />} />
               <Route path='/login' element={<Login />} />
               <Route path='/register' element={<Register />} />
+              <Route path='/termsconditions' element={<Terms />} />
             </Routes>
           < Footer />
         </div>

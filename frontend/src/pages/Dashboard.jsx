@@ -15,13 +15,11 @@ function Dashboard() {
 
   const {user} = useSelector((state) => state.auth)
   const {goals, isLoading, isError, message} = useSelector((state) => state.goals)
-  const [startDate, setStartDate] = useState(new Date());
 
   useEffect(() => {
     if(isError) {
       console.log(message)
     }
-
 
 
     if(!user) {
@@ -33,7 +31,7 @@ function Dashboard() {
     return () => {
       dispatch(reset())
     }
-  }, [user, navigate, isError, message, dispatch])
+  }, [user, isError, message, dispatch, navigate])
 
   if(isLoading) {
     return <Spinner />

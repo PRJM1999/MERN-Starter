@@ -1,16 +1,19 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect } from 'react';
+import {useDispatch, useSelector } from 'react-redux';
 import DatePicker from "react-datepicker";
-import {useSelector, useDispatch} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 import "react-datepicker/dist/react-datepicker.css";
 
 function DateForm() {
-    const navigate = useNavigate()
-    const dispatch = useDispatch()
 
     const [startDate, setStartDate] = useState(new Date());
-    const {user} = useSelector((state) => state.auth);
+    const {user} = useSelector((state) => state.auth)
+    
 
+    if(!user) {
+      console.log('Goal Form useEffect')
+      return
+  }
 
   return (
     <div>

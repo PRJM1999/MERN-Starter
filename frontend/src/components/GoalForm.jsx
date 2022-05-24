@@ -1,9 +1,8 @@
-import {useState, useSelector, useEffect} from 'react';
-import {useDispatch} from 'react-redux';
+import {useState, useEffect } from 'react';
+import {useDispatch, useSelector } from 'react-redux';
 import {createGoal} from '../features/goals/goalSlice';
-import places from '../data/hiking.json'
+import {useNavigate} from 'react-router-dom'
 import React from 'react'
-import Select from 'react-select'
 import DropDown from './DropDown';
 import DateForm from './DateForm';
 
@@ -11,17 +10,24 @@ import DateForm from './DateForm';
 
 export default function GoalForm() {
 
+    const [text, setText] = useState('')
+    const dispatch = useDispatch()
+
     const onSubmit = e => {
         e.preventDefault()
         dispatch(createGoal({text}))
         setText('')
     }
 
-    useEffect(() => {},);
+    const {user} = useSelector((state) => state.auth)
 
-    const [text, setText] = useState('')
-
-    const dispatch = useDispatch()
+    useEffect(() => {
+        if(!user) {
+            console.log('Goal Form useEffect')
+          return
+        }
+      }, [user, dispatch, onSubmit])
+    
 
   return (
     <>
@@ -31,8 +37,8 @@ export default function GoalForm() {
                 <label htmlFor="text">Trips</label>
                 <input type="text" name="text" id="text" value={text} onChange={(e) => setText(e.target.value)}/>
                 {/* Date Form & dropdown not currently working - will next next release */}
-                {/* <DateForm /> */}
-                {/* <DropDown /> */}
+                <DateForm />
+                <DropDown />
             </div>
             <div className="form-group">
                 <button className="btn btn-block" type='submit'>Add Trip</button>
