@@ -10,6 +10,8 @@ const createGoal = async (goalData, token) => {
         }
     }
 
+    console.log("This is from Goal Service" + goalData)
+
     const response = await axios.post(API_URL, goalData, config)
 
     return response.data

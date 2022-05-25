@@ -7,6 +7,10 @@ import places from '../../data/hiking.json'
 
 mapboxgl.accessToken = 'pk.eyJ1IjoicGF0cmlja21vbnRnb21lcnkxOTk5IiwiYSI6ImNsMnpiaGk4dDA5MDQzaW1xN2k0cGZlaTQifQ.NwaR6nAHCVI4q8TFXzL7Vg';
 
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 export default function Map() {
     const mapContainer = useRef(null);
     const map = useRef(null);

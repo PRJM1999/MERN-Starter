@@ -13,6 +13,7 @@ const initialState = {
 export const createGoal = createAsyncThunk('goals/create', async(goalData, thunkAPI) => {
     try {
         const token = thunkAPI.getState().auth.user.token
+        console.log("This is from Goal Slice" + goalData)
         return await goalService.createGoal(goalData, token)
     } catch (error) {
         const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString()
