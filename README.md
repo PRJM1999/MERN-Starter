@@ -17,7 +17,7 @@ To personally pick up some basic knowledge around web development, Javascript, R
 - Auth Bearer Token stored on local storage - vulnerable to Cross-Site Scripting Attack (XSS).
 - HTTPS not set up - only accessible through HTTP.
 
-Although XSS possible I deceided since this website doesn't contain any sensitive data it will be suffice.
+Although XSS possible I decided since this website doesn't contain any sensitive data it will be suffice.
 
 # Future Improvements
 I am unlikely to add any improvements due to this being a starter project.
