@@ -6,7 +6,6 @@ import GoalForm from '../components/GoalForm'
 import GoalItem from '../components/GoalItem'
 import Spinner from '../components/Spinner'
 import {getGoals, reset} from '../features/goals/goalSlice'
-import MessageForm from '../components/Forum/MessageForm'
 import Map from '../components/Mapcom/Map'
 
 function Dashboard() {

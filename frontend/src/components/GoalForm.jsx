@@ -3,8 +3,6 @@ import {useDispatch, useSelector } from 'react-redux';
 import {createGoal} from '../features/goals/goalSlice';
 import {useNavigate} from 'react-router-dom'
 import React, {Component} from 'react'
-import DropDown from './DropDown';
-import DateForm from './DateForm';
 import Select from 'react-select';
 import places from '../data/hiking.json';
 import DatePicker from "react-datepicker";
@@ -51,9 +49,6 @@ export default function GoalForm() {
             <div className="form-group">
                 <label htmlFor="text">Trips</label>
                 <input type="text" name="text" id="text" value={text} onChange={(e) => setText(e.target.value)}/>
-                {/* Date Form & dropdown not currently working - will next next release */}
-                {/* <DateForm dropdvalue={value}/> */}
-                {/* <DropDown /> */}
                 <Select
                     className="input-drop"
                     name="accounts"
