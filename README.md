@@ -34,6 +34,20 @@ Fork the code and use NPM build to add the dependency packages. Add a .ENV file 
 # T&Cs
 Add /termsconditions onto the website address
 
+# Login page
+<img width="718" alt="Login_form" src="https://user-images.githubusercontent.com/93584018/206758084-3769bf4d-128e-425b-8da6-cfd6b6817c77.png">
+This allow the user to log in, they can also register an account.
+
+# Interactive Map
+<img width="704" alt="Frontend_Map" src="https://user-images.githubusercontent.com/93584018/206758297-3d00eb22-1c54-4508-983a-792918c5e5d9.png">
+Here the user can browse an interactive map and find different hiking locations in Scotland.
+
+# Adding Hikes
+<img width="684" alt="Form" src="https://user-images.githubusercontent.com/93584018/206758638-e0efa1c4-e7ac-46c2-9262-c1cc0d3da890.png">
+Here the user can add entries, delete entries and also view their specific entries.
+
 # Website Addresses
+The website is currently offline, this project was purly intended for training.
+
 - http://3.10.213.186/login
 - http://ec2-3-10-213-186.eu-west-2.compute.amazonaws.com/login
